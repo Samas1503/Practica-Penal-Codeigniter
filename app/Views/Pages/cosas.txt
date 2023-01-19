@@ -1,0 +1,15 @@
+$arrayHoras=[];
+                            $f=0;
+                            foreach ($datos as $dato){
+                                if($dato->Nombre == $nombre->Nombre){
+                                    if($dato->Fecha == "0$i/01"){
+                                        $arrayHoras= array($dato->Hora => $dato->Estado);
+                                        //echo "<td>$dato->Hora</td>";
+                                    }
+                                }
+                                $cant=count($arrayHoras)!=1;
+                                    echo "<td>$cant</td>";
+                                    $f+=1;
+                                if($f==15)
+                                    break;
+                            }
