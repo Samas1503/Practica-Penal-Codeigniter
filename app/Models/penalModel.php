@@ -4,7 +4,7 @@ use CodeIgniter\Model;
 
 class penalModel extends Model{
     public function obtenerDatos(){
-        $informe = $this->db->query('SELECT Nombre, Fecha, Hora, Tipo FROM penalgorriti');
+        $informe = $this->db->query('SELECT Nombre, Fecha, Hora, Tipo, Estado FROM penalgorriti');
         return $informe->getResult();
     }
 
