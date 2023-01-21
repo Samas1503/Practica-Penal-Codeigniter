@@ -4,7 +4,7 @@ use CodeIgniter\Model;
 
 class penalModel extends Model{
     public function obtenerDatos(){
-        $informe = $this->db->query('SELECT Nombre, Fecha, Hora, Tipo, Estado FROM penalgorriti');
+        $informe = $this->db->query('SELECT Nombre, Fecha, Hora, Tipo, Estado, Dpto FROM penalgorriti');
         return $informe->getResult();
     }
 
@@ -13,8 +13,8 @@ class penalModel extends Model{
         return $informe->getResult();
     }
 
-    public function obtenerDatosNombre(){
-        $informe = $this->db->query('SELECT Nombre, Fecha, Hora, Estado FROM penalgorriti WHERE Nombre LIKE "AGUILAR.Mauro"');
+    public function obtenerDptos(){
+        $informe = $this->db->query('SELECT Nombre, Dpto FROM penalgorriti GROUP BY Nombre, Dpto');
         return $informe->getResult();
     }
 }

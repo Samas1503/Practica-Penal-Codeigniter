@@ -1,0 +1,133 @@
+ERROR - 2023-01-21 22:06:14 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'usuarioAdmin'@'localhost' (using password: YES) in C:\Users\WIN 10\www\penal\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Users\WIN 10\www\penal\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'usuarioAdmin', 'minSeguridad', 'penalgorriti', 3306, '', 0)
+#1 C:\Users\WIN 10\www\penal\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\WIN 10\www\penal\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\WIN 10\www\penal\app\Models\penalModel.php(12): CodeIgniter\Database\BaseConnection->query('SELECT Nombre F...')
+#4 C:\Users\WIN 10\www\penal\app\Controllers\Home.php(13): App\Models\penalModel->obtenerNombres()
+#5 C:\Users\WIN 10\www\penal\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\Users\WIN 10\www\penal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\WIN 10\www\penal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\WIN 10\www\penal\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\Users\WIN 10\www\penal\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\WIN 10\www\penal\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\WIN 10\www\penal\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\WIN 10\www\penal\app\Models\penalModel.php(12): CodeIgniter\Database\BaseConnection->query('SELECT Nombre F...')
+#3 C:\Users\WIN 10\www\penal\app\Controllers\Home.php(13): App\Models\penalModel->obtenerNombres()
+#4 C:\Users\WIN 10\www\penal\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#5 C:\Users\WIN 10\www\penal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\Users\WIN 10\www\penal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\WIN 10\www\penal\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-21 22:06:14 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\penalModel.php(12): CodeIgniter\Database\BaseConnection->query('SELECT Nombre FROM penalgorriti GROUP BY Nombre')
+ 3 APPPATH\Controllers\Home.php(13): App\Models\penalModel->obtenerNombres()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-21 22:06:43 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'usuarioAdmin'@'localhost' (using password: YES) in C:\Users\WIN 10\www\penal\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Users\WIN 10\www\penal\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'usuarioAdmin', 'minSeguridad', 'penalgorriti', 3306, '', 0)
+#1 C:\Users\WIN 10\www\penal\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\WIN 10\www\penal\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\WIN 10\www\penal\app\Models\penalModel.php(12): CodeIgniter\Database\BaseConnection->query('SELECT Nombre F...')
+#4 C:\Users\WIN 10\www\penal\app\Controllers\Home.php(13): App\Models\penalModel->obtenerNombres()
+#5 C:\Users\WIN 10\www\penal\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\Users\WIN 10\www\penal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\WIN 10\www\penal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\WIN 10\www\penal\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\Users\WIN 10\www\penal\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\WIN 10\www\penal\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\WIN 10\www\penal\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\WIN 10\www\penal\app\Models\penalModel.php(12): CodeIgniter\Database\BaseConnection->query('SELECT Nombre F...')
+#3 C:\Users\WIN 10\www\penal\app\Controllers\Home.php(13): App\Models\penalModel->obtenerNombres()
+#4 C:\Users\WIN 10\www\penal\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#5 C:\Users\WIN 10\www\penal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\Users\WIN 10\www\penal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\WIN 10\www\penal\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-21 22:06:43 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\penalModel.php(12): CodeIgniter\Database\BaseConnection->query('SELECT Nombre FROM penalgorriti GROUP BY Nombre')
+ 3 APPPATH\Controllers\Home.php(13): App\Models\penalModel->obtenerNombres()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-21 22:07:19 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'codeigniter4'@'localhost' (using password: YES) in C:\Users\WIN 10\www\penal\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Users\WIN 10\www\penal\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'codeigniter4', 'code4igniter', 'penal', 3306, '', 0)
+#1 C:\Users\WIN 10\www\penal\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\WIN 10\www\penal\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\WIN 10\www\penal\app\Models\penalModel.php(12): CodeIgniter\Database\BaseConnection->query('SELECT Nombre F...')
+#4 C:\Users\WIN 10\www\penal\app\Controllers\Home.php(13): App\Models\penalModel->obtenerNombres()
+#5 C:\Users\WIN 10\www\penal\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\Users\WIN 10\www\penal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\WIN 10\www\penal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\WIN 10\www\penal\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\Users\WIN 10\www\penal\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\WIN 10\www\penal\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\WIN 10\www\penal\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\WIN 10\www\penal\app\Models\penalModel.php(12): CodeIgniter\Database\BaseConnection->query('SELECT Nombre F...')
+#3 C:\Users\WIN 10\www\penal\app\Controllers\Home.php(13): App\Models\penalModel->obtenerNombres()
+#4 C:\Users\WIN 10\www\penal\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#5 C:\Users\WIN 10\www\penal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\Users\WIN 10\www\penal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\WIN 10\www\penal\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-21 22:07:19 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\penalModel.php(12): CodeIgniter\Database\BaseConnection->query('SELECT Nombre FROM penalgorriti GROUP BY Nombre')
+ 3 APPPATH\Controllers\Home.php(13): App\Models\penalModel->obtenerNombres()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-21 22:35:02 --> Undefined property: stdClass::$Dpto
+in APPPATH\Views\Pages\inicio.php on line 79.
+ 1 APPPATH\Views\Pages\inicio.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$Dpto', 'APPPATH\\Views\\Pages\\inicio.php', 79)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Pages\\inicio.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Pages/inicio', [], true)
+ 5 APPPATH\Controllers\Home.php(17): view('Pages/inicio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-21 22:40:48 --> mysqli_sql_exception: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'penal.penalgorriti.Dpto' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\Users\WIN 10\www\penal\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\WIN 10\www\penal\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT Nombre, ...', 0)
+#1 C:\Users\WIN 10\www\penal\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT Nombre, ...')
+#2 C:\Users\WIN 10\www\penal\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Nombre, ...')
+#3 C:\Users\WIN 10\www\penal\app\Models\penalModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT Nombre, ...')
+#4 C:\Users\WIN 10\www\penal\app\Controllers\Home.php(15): App\Models\penalModel->obtenerDptosNombres()
+#5 C:\Users\WIN 10\www\penal\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 C:\Users\WIN 10\www\penal\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\WIN 10\www\penal\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\WIN 10\www\penal\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-21 22:40:48 --> Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'penal.penalgorriti.Dpto' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\penalModel.php(17): CodeIgniter\Database\BaseConnection->query('SELECT Nombre, Dpto FROM penalgorriti GROUP BY Nombre')
+ 2 APPPATH\Controllers\Home.php(15): App\Models\penalModel->obtenerDptosNombres()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

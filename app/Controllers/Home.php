@@ -12,6 +12,7 @@ class Home extends BaseController
         $data = [
             'nombres' => $informe->obtenerNombres(),
             'datos' => $informe->obtenerDatos(),
+            'departamentos' => $informe->obtenerDptos(),
             'titulo' => 'Inicio'
         ];
         return view('Pages/inicio',$data);
