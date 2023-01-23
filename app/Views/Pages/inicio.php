@@ -69,7 +69,7 @@
                                     $acumm = (int)substr($salida,-2,2)-(int)substr($entrada,-2,2);
                                     if($acumm<0){
                                         --$acumh;
-                                        $acumm = 60+$acumm;
+                                        $acumm = 60+$acumm; 
                                     }
                                 }
                             }
